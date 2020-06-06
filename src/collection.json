@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "auth0-authentication-schematic": {
+      "description": "Add Auth0 authentication capabilities to your angular app.",
+      "factory": "./auth0-authentication-schematic/index#auth0AuthenticationSchematic",
+      "schema": "./auth0-authentication-schematic/schema.json"
+    }
+  }
+}

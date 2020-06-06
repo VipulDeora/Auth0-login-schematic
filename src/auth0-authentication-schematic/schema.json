@@ -1,0 +1,37 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "id": "Auth0 Authentication Schematic",
+  "description": "Adds auth0 authentication to angular application",
+  "properties": {
+    "project": {
+      "type": "string",
+      "description": "The name of the project.",
+      "$default": {
+        "$source": "projectName"
+      }
+    },
+    "redirectPath": {
+      "type": "string",
+      "description": "Redirect path after login",
+      "$default": {
+        "$source": "redirectPath",
+      },
+      "x-prompt": "Where do you want the application to redirect after login? (for ex: 'dashboard')"
+    },
+    "clientId": {
+      "type": "string",
+      "description": "Auth0 Client ID",
+      "x-prompt": "What is your Auth0 Client ID?"
+    },
+    "clientDomain": {
+      "type": "string",
+      "description": "Auth0 Client Domain",
+      "x-prompt": "What is your Auth0 Client Domain?"
+    }
+  },
+  "required": [
+    "redirectPath",
+    "clientDomain",
+    "clientId"
+  ]
+}
