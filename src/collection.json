@@ -5,6 +5,11 @@
       "description": "Add Auth0 authentication capabilities to your angular app.",
       "factory": "./auth0-authentication-schematic/index#auth0AuthenticationSchematic",
       "schema": "./auth0-authentication-schematic/schema.json"
+    },
+    "ng-add": {
+      "factory": "./ng-add/index",
+      "description": "Add Auth0 authentication schematic",
+      "schema": "./auth0-authentication-schematic/schema.json"
     }
   }
 }

@@ -8,6 +8,7 @@ import {AuthService} from './core/services/auth.service';
 })
 export class AppComponent {
   title = 'schematic-test';
+  redirectPath = '<%= redirectPath %>';
 
   constructor(public authService: AuthService) {
   }

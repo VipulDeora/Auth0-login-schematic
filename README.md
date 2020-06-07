@@ -1,28 +1,28 @@
-# Getting Started With Schematics
+# Add Social logins to your application with Auth0 with a single command
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+This schematic adds all that you need to get started with Auth0 authentication. It adds the required packages and service to integrate Auth0 authentication to your angular application.
 
-### Testing
+### Pre-requisites
 
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
+Sign up for an account with Auth0. Set up your social login keys and save CLIENT_ID and CLIENT_DOMAIN. This will be required by the schematic.
 
-Check the documentation with
-```bash
-schematics --help
-```
-
-### Unit Testing
-
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
-
-### Publishing
-
-To publish, simply do:
+### Usage
 
 ```bash
-npm run build
-npm publish
-```
+ng add @deora_vipul/auth0-schematic
+``` 
+A login button will start appearing at the bottom of the screen. Clicking on opens up the Auth0 authentication page.
 
-That's it!
- 
+### Inputs
+
+Key           |  Type         |   Desciption                                             |   Required
+------------- | ------------- | ------------------------------------------------------   | -------------
+redirectPath  | string        | Path to be redirected to after successful authentication | Yes
+clientDomain  | string        | Client Domain as obtained from Auth0 registration        | Yes
+clientId      | string        | Client ID as obtained from Auth0 registration            | Yes
+project       | string        | Name of the project in case using a workspace             | No
+
+### References
+
+Visit the docs https://auth0.com/docs/quickstart/spa/angular2 for detailed explanation.
+
