@@ -1,6 +1,6 @@
 {
-  "name": "@auth0/angular-schematic",
-  "version": "1.0.2",
+  "name": "@deora_vipul/auth0-schematic",
+  "version": "1.0.1",
   "repository": {
     "type": "git",
     "url": "https://github.com/VipulDeora/auth0-authentication-schematic.git"
